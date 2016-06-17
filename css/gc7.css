@@ -1,14 +1,11 @@
 body {
-  background-color: #fff2c7;
-  padding-bottom: 200px;
+  color: #333;
 }
 #maingc7 {
+  background-color: #FFE041;
   width: 95%;
-  margin: 0 auto;
-}
-#maingc7 .lio {
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 5px 10px;
   text-align: justify;
 }
