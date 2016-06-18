@@ -32,6 +32,9 @@ GitHub.sublime-settings
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 uikit/
+uikit/*
+uikit/*.*
+uikit/.*
 
 .idea/
 # User-specific stuff:

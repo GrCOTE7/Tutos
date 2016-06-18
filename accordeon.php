@@ -35,7 +35,7 @@
   </div>
 
 </div>
-<script src=" js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
 <script src="uikit/docs/js/uikit.min.js"></script>
 <script src="uikit/src/js/components/accordion.js"></script>
 </body>

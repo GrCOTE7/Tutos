@@ -2,7 +2,7 @@
 <html>
 <head>
   <title></title>
-  <script src=" js/jquery-3.0.0.min.js"></script>
+  <script src="js/jquery-2.2.4.min.js"></script>
   <script src="uikit/docs/js/uikit.min.js"></script>
   <link rel="stylesheet" href="uikit/src/less/uikit.css"/>
 

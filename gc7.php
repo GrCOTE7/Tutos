@@ -12,20 +12,14 @@
 
 <section id="maingc7">
 
-  <h2>To Do</h2>
-  <form name="checkListForm">
-    <input type="text" name="checkListItem" value="Oki">
-  </form>
-  <button id="button">Add!</button>
-  <br/>
-  <br/>
-  <div class="list"></div>
-
+  <h1>Title</h1>
+  <p>Paragraphe</p>
 
 </section>
-<script src=" js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
 <script src="uikit/docs/js/uikit.min.js"></script>
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
-<script src="gc7.js"></script>
+<!--<script src="jqgc7.js"></script>-->
+<script src="js.js"></script>
 </body>
 </html>
