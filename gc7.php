@@ -12,14 +12,15 @@
 
 <section id="maingc7">
 
-  <h1>Title</h1>
-  <p>Paragraphe</p>
+  <h1>JS</h1>
+  <p id='myP'>Paragraphe</p>
 
 </section>
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="uikit/docs/js/uikit.min.js"></script>
+<!--<script src=" js/jquery-2.2.4.min.js"></script>-- >
+  < !-- < script
+  src = "uikit/docs/js/uikit.min.js" ></script>-->
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
 <!--<script src="jqgc7.js"></script>-->
-<script src="js.js"></script>
+<script src="js02.js"></script>
 </body>
 </html>
