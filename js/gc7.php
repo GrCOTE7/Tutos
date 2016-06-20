@@ -11,7 +11,12 @@
 <body>
 
 <section class="block_gc7" id="output">
-  <span id="clickme">Cliquez-moi !</span>
+  <!--  <a id="link" href="http://www.siteduzero.com" target="_blank">Cliquez-moi !</a>-->
+
+
+  <p class="center">
+    <button type="button">Cliquez-moi... oopah</button>
+  </p>
 
 
   <!--  <h1>JS</h1>-->

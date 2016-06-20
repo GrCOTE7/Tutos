@@ -8,34 +8,23 @@ function aff(n) {
  */
 
 
-var container = document.getElementById('output'),
-    myP = document.createElement('p'),
-    lk = document.createElement('a');
-
-var txt = document.createTextNode('My JS a fait ce lien nommé: '),
-    lkTxt = document.createTextNode('Le Lien');
-
-lk.href = '#';
-lk.title = 'Title du Lien';
-lk.target = '_blank';
-lk.id = 'lk';
-
-lk.appendChild(lkTxt);
-
-myP.appendChild(txt);
-myP.appendChild(lk);
-
-container.appendChild(myP);
-
-var elt = document.getElementById('clickme');
+var elt = document.querySelector('#output button');
 var myEvent = function (e) {
-    e.target.innerHTML = "Vous m'avez cliqué !";
+    // e.returnValue = false;
+    e.target.firstChild.data = "Vous m'avez cliqué !";
     console.log(e);
 };
 
-// Le false signale bouillement -Event sur l'elt en derniere position hierarchique DOM
+// Le false (default) signale bouillement -Event sur l'elt en derniere position hierarchique DOM
 elt.addEventListener('click', myEvent, false);
 // elt.removeEventListener('click', myFunction);
+
+var container = document.getElementsByTagName('p');
+var myBtn = elt.cloneNode(true);
+container[0].appendChild(myBtn);
+
+
+console.log(myBtn);
 
 aff('<h1>JS</h1>');
 
