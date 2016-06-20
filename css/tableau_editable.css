@@ -31,11 +31,10 @@ input[type="text"].red {
 }
 table {
   margin: 0 auto;
-  border: 2px solid grey;
+  border-bottom: 2px solid grey;
   border-collapse: collapse;
 }
 td,
 th {
-  border: 1px solid darkgrey;
   padding: 2px 5px;
 }
