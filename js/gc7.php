@@ -11,20 +11,12 @@
 <body>
 
 <section class="block_gc7" id="output">
-  <!--  <a id="link" href="http://www.siteduzero.com" target="_blank">Cliquez-moi !</a>-->
 
-
-  <p>Quelques langages interprétés :</p>
-
-  <ol>
-    <li>PHP</li>
-    <li>Ruby</li>
-    <li>Python</li>
-    <li>Perl</li>
-    <li>Javascript</li>
-    <li>Lua</li>
-    <li>VBScript</li>
-  </ol>
+  <select id="list">
+    <option>Sélectionnez votre sexe</option>
+    <option>Homme</option>
+    <option>Femme</option>
+  </select>
 
   <!--  <h1>JS</h1>-->
   <!--  <p id="myP">Ceci est un paragraphe !</p>-->
