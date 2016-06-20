@@ -14,10 +14,17 @@
   <!--  <a id="link" href="http://www.siteduzero.com" target="_blank">Cliquez-moi !</a>-->
 
 
-  <p class="center">
-    <button type="button">Cliquez-moi... oopah</button>
-  </p>
+  <p>Quelques langages interprétés :</p>
 
+  <ol>
+    <li>PHP</li>
+    <li>Ruby</li>
+    <li>Python</li>
+    <li>Perl</li>
+    <li>Javascript</li>
+    <li>Lua</li>
+    <li>VBScript</li>
+  </ol>
 
   <!--  <h1>JS</h1>-->
   <!--  <p id="myP">Ceci est un paragraphe !</p>-->
