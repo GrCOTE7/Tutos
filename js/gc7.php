@@ -11,9 +11,13 @@
 <body>
 
 <section class="block_gc7" id="output">
+  <span id="clickme">Cliquez-moi !</span>
+
+
   <!--  <h1>JS</h1>-->
   <!--  <p id="myP">Ceci est un paragraphe !</p>-->
   <p id='myAffP'></p>
+
 </section>
 
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >

@@ -4,13 +4,13 @@
   <title>Tuto jQ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../uikit/src/less/uikit.css"/>
-  <link rel="stylesheet" href="../css/gc7.css">
+  <link rel="stylesheet" href="uikit/src/less/uikit.css"/>
+  <link rel="stylesheet" href="css/gc7.css">
 </head>
 
 <body>
 
-<section id="maingc7">
+<section class="block_gc7">
 
   <h1>JS</h1>
   <p id='myP'>Paragraphe</p>

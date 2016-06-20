@@ -18,7 +18,6 @@ var txt = document.createTextNode('My JS a fait ce lien nommé: '),
 lk.href = '#';
 lk.title = 'Title du Lien';
 lk.target = '_blank';
-lk.id = 'lk';
 
 lk.appendChild(lkTxt);
 
@@ -27,16 +26,18 @@ myP.appendChild(lk);
 
 container.appendChild(myP);
 
-var elt = document.getElementById('clickme');
+
+//TodoLi Faire fonctionner cet event sur elt crrée / JS (lk au lieu de clickme)
+
+var lk = document.getElementById('clickme');
 var myEvent = function (e) {
     e.target.innerHTML = "Vous m'avez cliqué !";
     console.log(e);
 };
 
-// Le false signale bouillement -Event sur l'elt en derniere position hierarchique DOM
-elt.addEventListener('click', myEvent, false);
-// elt.removeEventListener('click', myFunction);
+// Le false signale bouillement -Event sur l'elt en derniere position hierarchique DOM-2
+lk.addEventListener('click', myEvent, false);
+
+console.log(lk);
 
 aff('<h1>JS</h1>');
-
-console.log('FIni');
