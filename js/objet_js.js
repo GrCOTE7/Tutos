@@ -10,7 +10,8 @@ var f = {
     s: 'anne'
 };
 
-var o2T = function () { // foret +TAB
+// Taper ds IDE foret + TAB
+var o2T = function () {
     var n = 0, t = '<table>';
     for (var id in f) {
         n++;
@@ -24,12 +25,12 @@ var o2T = function () { // foret +TAB
 };
 o2T();
 
-delete f.i;
-o2T();
 
 f.moi = 'lionel';
 o2T();
 
+delete f.i;
+o2T();
 
 // console.log(f.properties);
 
