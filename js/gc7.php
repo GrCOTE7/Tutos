@@ -10,10 +10,10 @@
 </head>
 
 <body>
-
 <section class="block_gc7" id="output">
+<h1>Manipuler le code HTML (partie 1/2)</h1>
 
-  
+
   <p id='myAffP'></p>
 </section>
 

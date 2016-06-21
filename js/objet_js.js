@@ -4,6 +4,12 @@ function aff(n) {
     else if (n) myAffP.innerHTML += n + ' ';
 }
 
+var tps = 0;
+setInterval(function () {
+    tps++;
+    console.log(' secondes depuis démarrage du script');
+}, 1000);
+
 var f = {
     i: 'intru',
     f: 'sam',
