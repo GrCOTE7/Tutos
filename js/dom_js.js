@@ -5,11 +5,4 @@ function aff(n) {
 }
 
 
-var tps = 0;
-setInterval(function () {
-    tps++;
-    console.log(' secondes depuis démarrage du script');
-}, 1000);
-
-
 console.log('Fini');
