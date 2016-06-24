@@ -38,3 +38,6 @@ td,
 th {
   padding: 2px 5px;
 }
+blocquote {
+  color: blue;
+}

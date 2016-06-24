@@ -13,6 +13,7 @@
 <div id="monHorloge"></div>
 
 <section class="block_gc7" id="output">
+  Nous aurons le destin que nous aurons mérité. <cite>Albert Einstein</cite>
   <!--  <h1>Manipuler le code HTML (partie 1/2)</h1>-->
 
   <div id="myDiv">
@@ -29,8 +30,8 @@
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
 <!--<script src="jqgc7.js"></script>-->
 <!--<script src="js.js"></script>-->
-<!--<script src="horloge.js"></script>-->
-<script src="dom_js.js"></script>
+<script src="horloge.js"></script>
+<script src="remplacement_div.js"></script>
 <!--<script src="dom_list_all_validationjs.js"></script>-->
 </body>
 </html>
