@@ -5,35 +5,17 @@ function aff(n) {
 }
 // aff('<br/><br/>');
 
-var zozor = document.querySelector('#mascot');
 
-if (zozor) {
+var emp1 = {
+    nom: "Ochon",
+    prenom: "Paul"
+};
+var emp2 = {
+    nom: "Diossy",
+    prenom: "Daisy"
+};
+var employes = [emp1, emp2];
+console.log(employes[1].nom);
 
-    fig = document.createElement('figure'),
-        img = document.createElement('img'),
-        caption = document.createElement('figcaption');
 
-    img.src = 'data/zozor-happy.png';
-    img.alt = caption.innerHTML = 'Photo de zozor';
-
-    fig.appendChild(img);
-    fig.appendChild(caption);
-
-    zozor.parentNode.replaceChild(fig, zozor);
-
-}
-// console.log(output.firstChild.nextSibling.innerHTML);
-// console.log(output.lastChild.previousSibling.innerHTML);
-
-/*
- Autre variante pour la fin
- (Intéressante si le tableau était + long, ou qu'il faille positionner + loin que rang 2)
-
- if (output) {
- trs = output.getElementsByTagName('tr');
-
- if (trs[2]) { // Le <tr> de Chrome
- trs[2].parentNode.insertBefore(trNew, trs[2]);
- }
- }
- */
+aff('');

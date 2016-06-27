@@ -10,11 +10,10 @@
 </head>
 
 <body>
+<!--https://github.com/oc-courses/intro-javascript-->
 <div id="monHorloge"></div>
 
 <section class="block_gc7" id="output">
-
-  <span id="mascot"> </span>
 
   <p id='myAffP'></p>
 

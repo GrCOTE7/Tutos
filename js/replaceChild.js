@@ -22,18 +22,14 @@ if (zozor) {
     zozor.parentNode.replaceChild(fig, zozor);
 
 }
-// console.log(output.firstChild.nextSibling.innerHTML);
-// console.log(output.lastChild.previousSibling.innerHTML);
 
 /*
- Autre variante pour la fin
- (Intéressante si le tableau était + long, ou qu'il faille positionner + loin que rang 2)
 
- if (output) {
- trs = output.getElementsByTagName('tr');
+ <section class="block_gc7" id="output">
 
- if (trs[2]) { // Le <tr> de Chrome
- trs[2].parentNode.insertBefore(trNew, trs[2]);
- }
- }
+ <span id="mascot"> </span>
+
+ <p id='myAffP'></p>
+
+ </section>
  */
