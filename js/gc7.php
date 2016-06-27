@@ -11,14 +11,12 @@
 
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->
-<div id="monHorloge"></div>
-
 <section class="block_gc7" id="output">
-  
-  <p id='myAffP'></p>
+  <div id="myAffP"></div>
+  <div id="monHorloge"></div>
+
 
 </section>
-
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >
   < !-- < script
   src = "uikit/docs/js/uikit.min.js" ></script>-->
