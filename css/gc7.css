@@ -47,3 +47,7 @@ th {
 blockquote {
   color: #00F;
 }
+blockquote cite {
+  display: block;
+  font-style: normal;
+}

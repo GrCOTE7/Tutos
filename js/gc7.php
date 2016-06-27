@@ -14,7 +14,7 @@
 <div id="monHorloge"></div>
 
 <section class="block_gc7" id="output">
-
+  
   <p id='myAffP'></p>
 
 </section>
