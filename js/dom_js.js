@@ -65,12 +65,12 @@ var grCote7 = {
             return typeof variable.valueOf() === 'string'; // Si le type de la valeur primitive est « string » alors on retourne « true »
         },
         myRegEx: function () {
-            var r = /c/i;
+
+            var r = /on/i;
+
             return (r.test(grCote7.auteur)) ? 'true' : 'false';
         },
         test: function () {
-
-
         }
     }
 };
