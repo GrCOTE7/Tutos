@@ -7,9 +7,13 @@ var grCote7 = {
 
 
     init: function () { /* Initialisation */
-        if (0) console.log(this.tools.trouve());
-        // grCote7.aff(this.tools.isString('12'));
+        if (0) {
+            console.log(this.tools.trouve());
+            // grCote7.aff(this.tools.isString('12'));
+            grCote7.aff(grCote7.tools.isValidEmail('ggrrr@dudu.com'));
+        }
         grCote7.aff(this.tools.myRegEx());
+
         this.tools.test();
     },
 
@@ -64,16 +68,15 @@ var grCote7 = {
         isString: function isString(variable) {
             return typeof variable.valueOf() === 'string'; // Si le type de la valeur primitive est « string » alors on retourne « true »
         },
+        isValidEmail: function (email) {
+            var regEx = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i;
+            return (regEx.test(email)) ? 'true' : 'false';
+        },
         myRegEx: function () {
 
-            var r = /on/i;
-
-            return (r.test(grCote7.auteur)) ? 'true' : 'false';
         },
         test: function () {
         }
     }
 };
-
 grCote7.init();
-
