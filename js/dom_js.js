@@ -1,82 +1,150 @@
 // My Namespace
 var grCote7 = {
-    // Propiétés
-    version: 0.01,
-    auteur: 'Lionel COTE',
-    lang: 'fr',
+        // Propiétés
+        version: 0.01,
+        auteur: 'Lionel COTE',
+        lang: 'fr',
 
 
-    init: function () { /* Initialisation */
-        if (0) {
-            console.log(this.tools.trouve());
-            // grCote7.aff(this.tools.isString('12'));
-            grCote7.aff(grCote7.tools.isValidEmail('ggrrr@dudu.com'));
-        }
-        grCote7.aff(this.tools.myRegEx());
-
-        this.tools.test();
-    },
-
-    myBestFunction: function () {
-        this.aff('Ma meilleure fonction !');
-    },
-    aff: function (n) {
-        var myAffP = document.querySelector('#myAffP');
-        if (typeof n === 'undefined') myAffP.innerHTML = '';
-        else if (n) myAffP.innerHTML += n + ' ';
-    },
-
-    tools: { // sousNamespace
-        init: function () {/* Initialisation */
-            console.log('Mon tools is OK  !!!');
-        },
-
-        /**
-         * @return {string}
-         */
-        UcFirst: function (c) {
-            return c.charAt(0).toUpperCase() + c.slice(1, c.length);
-        },
-        trouve: function () {
-
-            var r = this.UcFirst(grCote7.auteur);
-
-            // Utilisation du tilde
-            // grCote7.auteur = 'dudu POL';
-            var rech = 'e',
-                source = grCote7.auteur.toLowerCase(),
-                rep = '"' + rech + '" est-il dans la chaîne "' + r + '" ?<br>\n';
-            rech = rech.toLowerCase();
-            // grCote7.aff('"' + rech + '" est bien contenu dans "' + this.UcFirst(grCote7.auteur) + '"');
-            if (~source.indexOf(rech)) { // indexOf retourne -1 si pas trouvé et tilde fait +1 * -1 => 0
-                var posFirst = source.indexOf(rech) + 1,
-                    posLast = source.lastIndexOf(rech) + 1,
-                    compl = (posFirst != posLast) ? ' et se retrouve en position ' + posLast : '';
-                rep += '- Oui, en position ' + posFirst + compl;
-            } else {
-                rep += '- Non, "' + rech + '" n\'est pas contenu dans "' + this.UcFirst(grCote7.auteur) + '"';
+        init: function () { /* Initialisation */
+            if (0) {
+                console.log(this.tools.trouve());
+                // grCote7.aff(this.tools.isString('12'));
+                grCote7.aff(grCote7.tools.isValidEmail('ggrrr@dudu.com'));
+                grCote7.aff(this.tools.myRegExExec());
             }
-            return rep;
+            this.tools.myRegEx();
+            this.tools.test();
+        },
 
-            /*
-             document.addEventListener('keypress', function (e) {
-             grCote7.aff(e.keyCode + ' (' + String.fromCharCode(e.keyCode) + ') ');
-             }
-             )
+        myBestFunction: function () {
+            this.aff('Ma meilleure fonction !');
+        },
+        aff: function (n) {
+            var myAffP = document.querySelector('#myAffP');
+            if (typeof n === 'undefined') myAffP.innerHTML = '';
+            else if (n) myAffP.innerHTML += n + ' ';
+        },
+
+        tools: { // sousNamespace
+            init: function () {/* Initialisation */
+                console.log('Mon tools is OK  !!!');
+            },
+
+            /**
+             * @return {string}
              */
-        },
-        isString: function isString(variable) {
-            return typeof variable.valueOf() === 'string'; // Si le type de la valeur primitive est « string » alors on retourne « true »
-        },
-        isValidEmail: function (email) {
-            var regEx = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i;
-            return (regEx.test(email)) ? 'true' : 'false';
-        },
-        myRegEx: function () {
+            UcFirst: function (c) {
+                return c.charAt(0).toUpperCase() + c.slice(1, c.length);
+            },
+            trouve: function () {
 
-        },
-        test: function () {
+                var r = this.UcFirst(grCote7.auteur);
+
+                // Utilisation du tilde
+                // grCote7.auteur = 'dudu POL';
+                var rech = 'e',
+                    source = grCote7.auteur.toLowerCase(),
+                    rep = '"' + rech + '" est-il dans la chaîne "' + r + '" ?<br>\n';
+                rech = rech.toLowerCase();
+                // grCote7.aff('"' + rech + '" est bien contenu dans "' + this.UcFirst(grCote7.auteur) + '"');
+                if (~source.indexOf(rech)) { // indexOf retourne -1 si pas trouvé et tilde fait +1 * -1 => 0
+                    var posFirst = source.indexOf(rech) + 1,
+                        posLast = source.lastIndexOf(rech) + 1,
+                        compl = (posFirst != posLast) ? ' et se retrouve en position ' + posLast : '';
+                    rep += '- Oui, en position ' + posFirst + compl;
+                } else {
+                    rep += '- Non, "' + rech + '" n\'est pas contenu dans "' + this.UcFirst(grCote7.auteur) + '"';
+                }
+                return rep;
+
+                /*
+                 document.addEventListener('keypress', function (e) {
+                 grCote7.aff(e.keyCode + ' (' + String.fromCharCode(e.keyCode) + ') ');
+                 }
+                 )
+                 */
+            },
+            isString: function isString(variable) {
+                return typeof variable.valueOf() === 'string'; // Si le type de la valeur primitive est « string » alors on retourne « true »
+            },
+            isValidEmail: function (email) { // Utilisation type primitif
+                var regEx = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i;
+                return (regEx.test(email)) ? 'true' : 'false';
+
+                // Avec Object RegExp, possibilité d'utiliser des variables
+                // var nickname = "Sebastien";
+                // var myRegex = new RegExp('Salut ' + nickname, "i");
+                // // grCote7.aff(myRegex);
+                // console.log(myRegex);
+                // console.log(myRegex.test('Salut Sebastien'));
+
+            },
+            myRegExExec: function () { // Usage de exec()
+                var sentence = "Si tin tonton";
+                var result = /\bt[io]n\b/.exec(sentence); // On cherche à récupérer le mot « ton »
+                if (result) { // On vérifie que ce n'est pas null
+                    console.log(result['0']); // Affiche chaîne trouvée
+                    grCote7.aff(result['0']);
+                    return result.input;
+                }
+                return false;
+
+                // Avec capture (Max $9)
+                // var birth = 'Je suis né en mars, ok ?';
+                // console.log(/^Je suis né en (\S+), (ok) \?$/.test(birth));
+                // aff(RegExp.$1); // Affiche : « mars »
+
+                // Faire une parenthèse non capturante
+                // /(?:https|http|ftp|steam):\/\//
+
+                // ?: 0 ou 1
+                // +: 1 ou +
+                // *: 0,1 ou+
+
+                // var html = '<a href="www.mon-adresse.be"><strong class="web">Mon site</strong></a>';
+                // /<a href="(.+?)">/.exec(html); // le '?' rend non-greedy (non gourmande) la capture
+                // console.log(RegExp.$1);
+
+                // Replace
+                // aff('Je suis Lionel'.replace(/Sébastien/, 'Johann')); // Par RegEx
+                // aff('Je suis Lionel'.replace('Lionel', 'Adel'));      // Par Object String
+
+                // Option g pour recherche globale (= Toutes les occurences)
+                // var sentence = 'Il s\'appelle Sébastien. Sébastien écrit un tutoriel.';
+                // var result = sentence.replace(/Sébastien/g, 'Johann');
+                // aff(result); // Il s'appelle Johann. Johann écrit un tutoriel.
+
+                // Capture + replace() pour ré-ordonner
+                // var date = '05/26/2011';
+                // date = date.replace(/^(\d{2})\/(\d{2})\/(\d{4})$/, 'Le $2/$1/$3');
+                // aff(date); // Le 26/05/2011
+
+                // Si $ en sortie, le doubler
+                // var total = 'J\'ai 0 dollars en liquide.';
+                // aff(total.replace(/(\d+) dollars?/, '$$$1')); // J'ai 25 $ en liquide (? pour s présent?)
+            },
+
+            myRegEx: function () {
+
+                var valuei = value = '[b]Salut[/b]';
+
+                value = value.replace(/\[b\]([\s\S]*?)\[\/b\]/g, '<strong>$1</strong>'); // Gras
+                value = value.replace(/\[i\]([\s\S]*?)\[\/i\]/g, '<em>$1</em>'); // Italique
+                value = value.replace(/\[s\]([\s\S]*?)\[\/s\]/g, '<del>$1</del>'); // Barré
+                value = value.replace(/\[u\]([\s\S]*?)\[\/u\]/g, '<span style="text-decoration: underline">$1</span>'); // Souligné
+
+                console.log(valuei + ' => ' + value);
+
+            },
+
+            test: function () {
+            }
         }
     }
+    ;
+var aff = function (n) {
+    grCote7.aff(n)
 };
 grCote7.init();
+
