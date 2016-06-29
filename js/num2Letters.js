@@ -1,13 +1,13 @@
 /**
  * Created by cote on 19/06/16.
  */
-var e = document.getElementById('myP');
-e.innerHTML = '';
-function aff(n) {
-    e = document.getElementById('myP');
-    e.innerHTML += n + ' ';
-    // console.log(elem);
-}
+// var e = document.getElementById('myP');
+// e.innerHTML = '';
+// function aff(n) {
+//     e = document.getElementById('myP');
+//     e.innerHTML += n + ' ';
+//     // console.log(elem);
+// }
 
 function num2Letters(n) {
 
@@ -24,7 +24,6 @@ function num2Letters(n) {
     var u = n % 10,
         d = (n % 100 - u) / 10,
         c = (n % 1e3 - n % 100) / 100;
-
 
     var unites, dizaines, centaines;
 
@@ -50,9 +49,7 @@ function num2Letters(n) {
             unites = '';
 
         } else {
-
             dizaines = d2L[d];
-
         }
 
         dizaines += (u === 0 && d === 8 ? 's' : '');
@@ -64,8 +61,9 @@ function num2Letters(n) {
             + (c > 1 && d == 0 && u == 0 ? 's' : '');
 
 
-        console.log('c: %s  - d: %s - u: %s', c, d, u);
-        console.log('%s  - %s - %s', centaines, dizaines, unites);
+        // console.log('c: %s  - d: %s - u: %s', c, d, u);
+        // console.log('%s  - %s - %s', centaines, dizaines, unites);
+
         // Retour de la solution
         return centaines + (centaines && dizaines ? '-' : '')
             + dizaines + (centaines && unites || dizaines && unites ? '-' : '')
@@ -74,19 +72,20 @@ function num2Letters(n) {
     }
 }
 
+if (0) console.log(num2Letters(555));
 
-var userEntry;
+// Pour activer ce code, activer aussi aff() en haut
+// var userEntry;
+//
+// while (userEntry =
+//     prompt('Indiquez le nombre à écrire en toutes lettres (entre 0 et 999) :')) {
+//
+//     aff(userEntry + ': ' + num2Letters(parseInt(userEntry, 10)) + '<hr>');
+//
+// }
 
-while (userEntry =
-    prompt('Indiquez le nombre à écrire en toutes lettres (entre 0 et 999) :')) {
-
-    aff(userEntry + ': ' + num2Letters(parseInt(userEntry, 10)) + '<hr>');
-
-}
 /*
  for (i = 0; i <= 999; i++) {
  aff(i + ' : ' + num2Letters(i) + '<br>');
  }
  */
-
-aff('<hr>Ok');
