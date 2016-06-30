@@ -22,16 +22,6 @@
   <div id="myAffP"></div>
   <div id="monHorloge"></div>
 
-  <div>Elément 0</div>
-  <div>Elément 1</div>
-  <div>Elément 2</div>
-  <div>Elément 3</div>
-  <div>Elément 4</div>
-  <div>Elément 5</div>
-  <div>Elément 6</div>
-  <div>Elément 7</div>
-  <div>Elément 8</div>
-  <div>Elément 9</div>
 
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >
