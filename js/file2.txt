@@ -1,0 +1,1 @@
+Texte 2 contenu dans file2.txt

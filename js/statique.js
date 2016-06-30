@@ -203,20 +203,16 @@ grCote7.init();
 
 // myVAr est une statique (Conserve sa valeur à chaque appel de la fonction
 // et n'existe que pour display()
-// Grâce au retour d'une fonction anonyme dans l'IIFE
+// Grâce au retour d'une fonction anonyme
 
 var display = (function () {
-
     var myVar = 0; // Déclaration de la variable pseudo-statique
-
     return function (value) {
-
         if (typeof value != 'undefined') {
             myVar = value;
         }
-
         console.log(myVar);
-
+        aff(myVar);
     };
 
 })();
