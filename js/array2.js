@@ -201,10 +201,34 @@ var aff = function (n) {
 grCote7.init();
 
 
-//
-// <p>
-// <a href="../imgs/1.jpg" title="Afficher l'image originale"><img src="../imgs/1_min.jpg" alt="Miniature"/></a>
-//     <a href="../imgs/2.jpg" title="Afficher l'image originale"><img src="../imgs/2_min.jpg" alt="Miniature"/></a>
-//     <a href="../imgs/3.jpg" title="Afficher l'image originale"><img src="../imgs/3_min.jpg" alt="Miniature"/></a>
-//     <a href="../imgs/4.jpg" title="Afficher l'image originale"><img src="../imgs/4_min.jpg" alt="Miniature"/></a>
-//     </p>
+// var arr = ['a', 'b', 'd', 'c'];
+var arr = [3, 9, 2].concat([35, 8]); // Concaténation d'arrays
+
+arr.forEach(function (v, i, arr) {
+//    aff(v);
+});
+
+// sort avec ordre non alphabétique => nouvelle valeur de l'array
+arr.sort(function (a, b) {
+    return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+});
+aff(arr + '<hr>'); // La tableau est ordonné
+
+// Extrait de 2 à 4ème
+aff(arr.slice(1, 3) + '<br>');
+//aff(arr + '<hr>'); // Le tableau reste inchangé
+
+// Extraction (=retour de la fonction)
+aff('On ôte ' + arr.splice(1, 3, 7, 77, 99) + ' et les remplaçons par 7 & 77,<br>et on y ajoute 99: ' + '<br>');
+aff('Arr devient: ' + arr + '<hr>'); // Le tableau est changé
+
+var myArray = [1, null, 4, 5];
+myArray.splice(1, 1, 2, 3);
+aff(myArray + '<br>'); // Affiche : 1,2,3,4,5
+myArray.splice(3, 0, 'et');
+aff(myArray.push('voilà', 'fini') + ' est le retour de push() = length');
+aff(myArray + '<hr>');
+aff('Valeur en retour de pop(): ' + myArray.pop() + '<br> et arr devient: ');
+aff(myArray + '<hr>');
+
+aff(Array.isArray(myArray)); // true
