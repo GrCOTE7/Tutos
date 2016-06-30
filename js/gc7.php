@@ -7,13 +7,7 @@
   <link rel="stylesheet" href="../uikit/src/less/uikit.css"/>
   <link rel="stylesheet" href="../css/gc7.css">
   <!--  <link rel="stylesheet" href="../css/gc7.less">-->
-  <style>
-    div {
-      display : none;
-      margin  : 5px;
-    }
-  </style>
-</head>
+ </head>
 
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->

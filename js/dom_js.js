@@ -23,7 +23,10 @@ var grCote7 = {
     aff: function (n) {
         var myAffP = document.querySelector('#myAffP');
         if (typeof n === 'undefined') myAffP.innerHTML = '';
-        else if (n) myAffP.innerHTML += n + ' ';
+        else {
+            if (n == 0) n = '0';
+            if (n) myAffP.textContent += n + ' ';
+        }
     },
 
     dom: {
@@ -216,6 +219,7 @@ var display = (function () {
         }
 
         console.log(myVar);
+        aff(myVar);
 
     };
 
