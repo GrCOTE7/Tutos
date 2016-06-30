@@ -42,7 +42,7 @@
 <!--<script src="js.js"></script>-->
 <!--<script src="horloge.js"></script>-->
 <!--<script src="num2Letters.js"></script>-->
-<script src="dom_js.js"></script>
+<script src="closure.js"></script>
 <!--<script src="dom_list_all_validationjs.js"></script>-->
 </body>
 </html>
