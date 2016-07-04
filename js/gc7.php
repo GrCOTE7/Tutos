@@ -12,11 +12,10 @@
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->
 <section class="block_gc7" id="output">
-
+    <iframe src="#" height="210" id="myFrame" name="myFrame"></iframe>
   <? // include 'ajax01.php'; ?>
-
   <div id="myAffP"></div>
-  <div id="monHorloge"></div>
+  <!--  <div id="monHorloge"></div>-->
 
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >

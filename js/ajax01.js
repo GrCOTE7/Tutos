@@ -222,7 +222,7 @@ grCote7.init();
 
 //  AJAX 001
 function loadFile(file) {
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest(); // XHR2
 
     // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement :
     xhr.open('GET', file);
@@ -238,8 +238,11 @@ function loadFile(file) {
 }
 
 (function () { // Comme d'habitude, une IIFE pour éviter les variables globales
-    var inputs = document.getElementsByTagName('input'),
-        inputsLen = inputs.length;
+
+    var inputs = document.getElementsByTagName('input');
+    // var inputs = document.getElementsByTagName('input'),
+    inputsLen = inputs.length;
+    console.log(inputsLen);
 
     for (var i = 0; i < inputsLen; i++) {
         inputs[i].addEventListener('click', function () {
@@ -249,3 +252,32 @@ function loadFile(file) {
 
     }
 })();
+
+/* // Exemple avec la propriété XHR.progress
+ // Utiliser l'XHR2 implique d'avoir un navigateur très récent, donc profitons-en pour se servir de querySelector() !
+ document.querySelector('#loadButton').onclick = function() {
+
+ var progression = document.querySelector('#progression div').style,
+ xhr = new XMLHttpRequest();
+
+ progression.width = 0; // On vide la progression dans le cas où vous souhaiteriez faire plusieurs essais
+
+ xhr.open('GET', 'img.jpg');
+
+ xhr.onprogress = function(e) {
+
+ progression.width = e.loaded * 100 / e.total + '%'; // Un simple calcul de pourcentage et c'est tout bon !
+
+ };
+
+ xhr.onload = function() { // Autant utiliser le nouvel événement non ?
+
+ progression.width = '100%';
+ alert('Chargement terminé !');
+
+ };
+
+ xhr.send(null);
+
+ };
+ */

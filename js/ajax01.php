@@ -45,3 +45,4 @@ foreach ( $prenoms as $k => $prenom ) {
 <p id="fileContent">
   <span>Aucun fichier chargé</span>
 </p>
+<? // $a = utf8_decode ( 'DrÃ´le de tÃªte' );echo $a;?>
