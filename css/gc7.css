@@ -2,6 +2,7 @@ body {
   color: #333;
   width: 100%;
   font-size: 1.5em;
+  font-family: arial;
 }
 .block_gc7 {
   background-color: #FFFACD;
@@ -21,6 +22,9 @@ body {
 }
 .checked {
   color: #f00;
+}
+.centered {
+  text-align: center;
 }
 input[type="text"].green {
   background: #DFF0D8;
@@ -129,4 +133,11 @@ blockquote cite {
 }
 p {
   text-align: center;
+}
+iframe {
+  color: #00f;
+  font-family: arial;
+}
+.blue {
+  color: #00ffff;
 }

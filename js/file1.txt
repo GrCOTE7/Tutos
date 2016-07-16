@@ -1,1 +1,1 @@
-Texte 1 contenu dans file1.txt
+Texte 1 contenu dans f<a href="#">file1.txt</a>

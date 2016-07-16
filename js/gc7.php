@@ -11,12 +11,26 @@
 
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->
+
 <section class="block_gc7" id="output">
-    <iframe src="#" height="210" id="myFrame" name="myFrame"></iframe>
+  <div class="centered">
+    <iframe src="file1.html" width="300" height="150" id="myFrame" name="myFrame"
+            style="border: 2px solid red; -webkit-border-radius: 7px;-moz-border-radius: 7px;border-radius: 7px;margin: 5px auto 10px auto;"
+            class="centered blue">
+    </iframe>
+  </div>
   <? // include 'ajax01.php'; ?>
   <div id="myAffP"></div>
   <!--  <div id="monHorloge"></div>-->
+  <? // echo  date('d-m-Y H:i:s')
+  $titre = 'Test';
+  $maVar = <<<EOS
+<h1>$titre</h1>
+<p>Ok</p>
+EOS;
+  echo $maVar;
 
+  ?>
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >
   < !-- < script
