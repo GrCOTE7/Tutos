@@ -1,10 +1,3 @@
-var myAffP = document.querySelector('#myAffP');
-function aff(n) {
-    if (typeof n === 'undefined') myAffP.innerHTML = '';
-    else if (n) myAffP.innerHTML += n + ' ';
-}
-// aff('<br/><br/>');
-
 (function () { // On utilise une IIFE pour ne pas polluer l'espace global
     var storage = {}; // Contient l'objet de la div en cours de déplacement
 
@@ -35,12 +28,11 @@ function aff(n) {
                 target.style.left = e.clientX - storage.offsetX + 'px';
             }
         });
+
     }
 
     init(); // On initialise le code avec notre fonction toute prête.
 })();
-
-aff('Ok');
 
 // <section class="block_gc7" id="output">
 //     <p id='myAffP'></p>
@@ -52,3 +44,4 @@ aff('Ok');
 //
 //     </section>
 
+aff('Oki');

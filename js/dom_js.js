@@ -220,4 +220,4 @@ var aff = function (n, chgLg) {
 };
 // grCote7.init();
 
-aff('Ok');
+// aff('Ok');
