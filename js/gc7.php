@@ -13,10 +13,9 @@
 <!--https://github.com/oc-courses/intro-javascript-->
 
 <section class="block_gc7" id="output">
-  <p draggable="true" id="draggable">Draggable</p>
-  <div id="dropZone"></div>
+
   <div id="myAffP"></div>
-  <!--  <div id="monHorloge"></div>-->
+  <div id="monHorloge"></div>
 
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-- >
@@ -25,12 +24,12 @@
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
 <!--<script src="jqgc7.js"></script>-->
 <!--<script src="js.js"></script>-->
-<!--<script src="horloge.js"></script>-->
+<script src="horloge.js"></script>
 <!--<script src="num2Letters.js"></script>-->
 <!--<script src="ajax01.js"></script>-->
 <script src="dom_js.js"></script>
 <!--<script src="draggable.js"></script>-->
-<script src="draggable_api.js"></script>
+<!--<script src="draggable_api.js"></script>-->
 <!--<script src="dom_list_all_validationjs.js"></script>-->
 </body>
 </html>
