@@ -26,6 +26,11 @@ body {
 .centered {
   text-align: center;
 }
+.rounded {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
 input[type="text"].green {
   background: #DFF0D8;
 }
@@ -143,8 +148,8 @@ iframe {
   position: absolute;
   right: 10px;
   top: 50px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 1px solid blue;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
