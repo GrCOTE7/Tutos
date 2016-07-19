@@ -220,17 +220,4 @@ var aff = function (n, chgLg) {
 };
 // grCote7.init();
 
-
-var frame = document.getElementById('myFrame').contentDocument;
-// var c = document.querySelector('#myFrame');
-// var frame_links = frame.getElementsByTagName('a').length;
-var frame_word = frame.querySelector('#aword');
-console.log(frame_word);
-
-// var ch = 'lionel';
-
-// aff(parseInt(1000001, 10), 1);
-// var n = parseInt(1000001, 2);
-// console.log(n + ' ' + typeof n);
-// aff();
-// aff('Oki');
+aff('Ok');
