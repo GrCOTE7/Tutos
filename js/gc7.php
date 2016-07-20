@@ -34,6 +34,7 @@
 <!--<script src="ajax01.js"></script>-->
 <script src="dom_js.js"></script>
 <script src="div.js"></script>
+<!--<script src="variables_speciales.js"></script>-->
 <!--<script src="draggable.js"></script>-->
 <!--<script src="draggable_api.js"></script>-->
 <!--<script src="dom_list_all_validationjs.js"></script>-->
