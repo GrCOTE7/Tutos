@@ -211,6 +211,28 @@ var grCote7 = {
             });
         },
 
+        chrono: {
+            start: function () {
+                this.tDeb = new Date().getTime();
+            },
+            stop: function () {
+                function a0(v) { // Fct ajout du 0 si v<10
+                    return (v > 9 ? v : '0' + v);
+                }
+
+                var h, m, s, c, t = new Date().getTime() - this.tDeb;
+                var tt;
+                c = t % 1000;
+                tt = (t - c) / 1000; // t en secondes
+                h = Math.floor(tt / 3600);
+                tt = tt - h * 3600;
+                m = Math.floor(tt / 60);
+                s = tt - m * 60;
+                aff(' ', 2);
+                aff('(Tps d\'éxécution: ' + a0(h) + ':' + a0(m) + '\'' + a0(s) + '\'\'' + (c > 99 ? c : c > 9 ? '0' + c : '00' + c + ')'), 1);
+                // aff(t + ' ms');
+            }
+        },
         test: function () {
         }
     }
@@ -219,5 +241,3 @@ var aff = function (n, chgLg) {
     grCote7.aff(n, chgLg)
 };
 // grCote7.init();
-
-// aff('Ok');
