@@ -4,7 +4,7 @@ grCote7.tools.chrono.start();
 
 (function () {
 
-    
+    aff('Ok (JS)');
 
 })();
 

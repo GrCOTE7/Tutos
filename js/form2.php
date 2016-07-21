@@ -26,7 +26,28 @@
 <!--https://github.com/oc-courses/intro-javascript-->
 
 <section class="block_gc7" id="output">
-  Ok (HTML)
+  <form method="post" action="page.php" onsubmit="return verifier(this);" onreset="return confirm('Vraiment ?');"
+        id="idForm">
+
+    <!-- ici, le contenu du formulaire -->
+
+    <textarea name="infos">Oki</textarea>
+    Vous êtes :
+
+    <select name="genre" onchange="voirSelection(this)">
+      <option value="rien">Choisissez...</option>
+      <option value="garcon">Un garçon</option>
+      <option value="fille">Une fille</option>
+      <option value="saispas">Je ne sais pas</option>
+    </select>
+
+    <input type="submit" value="Envoyer"/>
+    <input type="reset" value="Effacer"/>
+
+  </form>
+
+  <img src="../imgs/avatar_none.png" alt="" onclick="this.src='../imgs/2.jpg'"/>
+  <a href="page.html" onclick="afficherDestination(this);">Cliquez ici</a>
   <div id="myAffP"></div>
   <!--  <div id="monHorloge"></div>-->
 
@@ -41,7 +62,7 @@
 <!--<script src="num2Letters.js"></script>-->
 <!--<script src="ajax01.js"></script>-->
 <script src="dom_js.js"></script>
-<script src="div.js"></script>
+<script src="form2.js"></script>
 <!--<script src="variables_speciales.js"></script>-->
 <!--<script src="draggable.js"></script>-->
 <!--<script src="draggable_api.js"></script>-->
