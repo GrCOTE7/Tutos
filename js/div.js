@@ -9,7 +9,7 @@ grCote7.tools.chrono.start();
 
 })();
 
-var arr = [1, 2, 3],
+var arr = [],
     o2T = function () { // foret + TAB ds IDE
         var n = 0, t = '<table>';
         for (var id in arr) {
