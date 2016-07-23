@@ -10,9 +10,12 @@ somme=25000
 pct=$(printf '%.3f' $(echo "${alphabet[$lettre]}/$somme" | bc -l))
 
 echo ''
-echo 'Résultat = ' $pct
+echo 'Résultat = ' ${pct}
 
 
+#let "n=10/3 | bc -l";
+  n=$( echo "100*10/3" | bc -l)
+echo ${n};
 
 
 

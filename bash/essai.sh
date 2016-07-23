@@ -3,4 +3,4 @@
 # Liste les fichiers courants
 ls -l
 
-pwd
+echo 'Dossier: '; pwd

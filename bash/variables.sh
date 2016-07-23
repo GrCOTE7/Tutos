@@ -4,7 +4,7 @@
 nom='Lionel'
 
 message=`pwd`
-if [ $nom = 'Lionel' ]
+if [ ${nom} = 'Lionel' ]
 then
 echo "Bonjour $nom, Vous êtes dans le dossier $message"
 fi
@@ -12,7 +12,7 @@ fi
 let "a = 5"
 let "b = 2"
 let "c = a + b"
-echo "La somme de 5 + 2 est " $c
+echo "La somme de 5 + 2 est " ${c}
 
 # Limité à 9, les paramètres peuvent être décalé à gauche avec shift
 echo "Vous avez lancé $0, il y a $# paramètres"
@@ -53,7 +53,7 @@ done
 # 1 3 5 7 9
 for i in `seq 1 2 10`;
  	do
-  	echo $i
+  	echo ${i}
 	done
 
 
