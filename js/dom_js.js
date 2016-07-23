@@ -81,14 +81,16 @@ var grCote7 = {
         ucFirst: function (c) {
             return c.charAt(0).toUpperCase() + c.slice(1, c.length);
         },
-        trouve: function () {
+        trouve: function (rech, source) {
 
-            var r = this.ucFirst(grCote7.auteur);
 
             // Utilisation du tilde
             // grCote7.auteur = 'dudu POL';
-            var rech = 'e',
-                source = grCote7.auteur.toLowerCase(),
+            if (rech == undefined)  rech = 'e';
+            if (source == undefined) {
+                source = grCote7.auteur.toLowerCase();
+            }
+            var r = this.ucFirst(source),
                 rep = '"' + rech + '" est-il dans la chaîne "' + r + '" ?<br>\n';
             rech = rech.toLowerCase();
             // grCote7.aff('"' + rech + '" est bien contenu dans "' + this.UcFirst(grCote7.auteur) + '"');
@@ -213,14 +215,19 @@ var grCote7 = {
 
         chrono: {
             start: function () {
-                this.tDeb = new Date().getTime();
+                this.tDeb = new Date();
             },
-            stop: function () {
+            /**
+             *
+             * @param typeChono
+             * Affichage type chono
+             */
+            stop: function (typeChono) {
                 function a0(v) { // Fct ajout du 0 si v<10
                     return (v > 9 ? v : '0' + v);
                 }
 
-                var h, m, s, c, t = new Date().getTime() - this.tDeb;
+                var h, m, s, c, t = new Date().getTime() - this.tDeb.getTime();
                 var tt;
                 c = t % 1000;
                 tt = (t - c) / 1000; // t en secondes
@@ -229,8 +236,10 @@ var grCote7 = {
                 m = Math.floor(tt / 60);
                 s = tt - m * 60;
                 aff(' ', 2);
-                aff('(Tps d\'éxécution: ' + a0(h) + ':' + a0(m) + '\'' + a0(s) + '\'\'' + (c > 99 ? c : c > 9 ? '0' + c : '00' + c + ')'), 1);
-                // aff(t + ' ms');
+                if (typeChono == undefined)
+                    aff("Le script a mis " + t / 1000 + " secondes.", 1);
+                else
+                    aff('(Tps d\'éxécution: ' + a0(h) + ':' + a0(m) + '\'' + a0(s) + '\'\'' + (c > 99 ? c : c > 9 ? '0' + c : '00' + c ) + ')', 1);
             }
         },
         test: function () {

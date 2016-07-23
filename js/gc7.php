@@ -7,26 +7,13 @@
   <link rel="stylesheet" href="../uikit/src/less/uikit.css"/>
   <link rel="stylesheet" href="../css/gc7.css">
   <!--  <link rel="stylesheet" href="../css/gc7.less">-->
-  <script>
-    function afficherDestination(lien) {
-      alert("Ce lien mene ici : " + lien.href);
-    }
-
-    function voirSelection(liste) {
-      var numero = liste.selectedIndex;
-      var valeur = liste.options[numero].value;
-      aff("Vous avez choisi : " + valeur);
-      // En plus court
-      // aff(liste.options[liste.selectedIndex].value);
-    }
-  </script>
 </head>
 
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->
 
 <section class="block_gc7" id="output">
-  Ok (HTML)
+
   <div id="myAffP"></div>
   <!--  <div id="monHorloge"></div>-->
 
@@ -46,5 +33,8 @@
 <!--<script src="draggable.js"></script>-->
 <!--<script src="draggable_api.js"></script>-->
 <!--<script src="dom_list_all_validationjs.js"></script>-->
+<!--<script src="form3.js"></script>-->
+<!--<script src="array3.js"></script>-->
+<!--<script src="math.js"></script>-->
 </body>
 </html>
