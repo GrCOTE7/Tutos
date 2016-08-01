@@ -25,7 +25,7 @@
       <td>Jeux vidéo</td>
     </tr>
     <tr>
-      <td>Team Fortress²</td>
+      <td>Team Fortress</td>
       <td>Jeux vidéo</td>
     </tr>
     <tr>

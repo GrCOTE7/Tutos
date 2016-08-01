@@ -13,7 +13,6 @@
 <div id="maingc7">
   <h1>Tuto</h1>
 
-
   <div class="uk-container uk-container-center">
 
     <ul class="uk-sortable uk-list uk-list-space" data-uk-sortable="{handleClass:'uk-panel'}">
@@ -36,16 +35,15 @@
         </div>
       </li>
     </ul>
-    
+
     <button type="button" class="uk-button uk-button-success">Save</button>
 
   </div>
 
-
 </div>
 <script src="js/jquery-2.2.4.min.js"></script>
-<script src="uikit/docs/js/uikit.min.js"></script>
-<script src="uikit/src/js/components/sortable.js"></script>
-<script src="sortablelist_ajax.php.js"></script>
+<script src="uikit/js/uikit.min.js"></script>
+<script src="uikit/js/components/sortable.js"></script>
+<script src="sortablelist_ajax.js"></script>
 </body>
 </html>

@@ -150,7 +150,7 @@ do {
             }
 
             if (firstName && lastName) {
-                // Formate Initiale UpperCase and Name all uppereCase
+                // Formate Initiale UpperCase and Name all upperCase
                 contacts.add(firstName.charAt(0).toUpperCase() + firstName.slice(1, firstName.length).toLowerCase(), lastName.toUpperCase());
             }
             break;

@@ -22,7 +22,8 @@
             activeEl.find('div.uk-badge').addClass('uk-animation-scale-down');
         }
     }
-    function saveOrdering (sortable, button) {
+
+    function saveOrdering(sortable, button) {
         var url = 'index.php',
             data = {
                 task: 'saveOrdering',
@@ -37,8 +38,12 @@
             console.log(result); //json response from server
             button.prop('disabled', false);
         });
-        setTimeout(function(){button.prop('disabled', false);},1000);//for testing only!
+        setTimeout(function () {
+            button.prop('disabled', false);
+        }, 1000);//for testing only!
     }
 })(jQuery);
 
-UIkit.ready(function() {UIkit.$body.prepend('<div class="uk-float-right uk-badge">UIkit version ' + UIkit.version + '</div>')});
+UIkit.ready(function () {
+    UIkit.$body.prepend('<div class="uk-float-right uk-badge">UIkit version ' + UIkit.version + '</div>')
+});

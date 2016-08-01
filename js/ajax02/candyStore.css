@@ -1,0 +1,48 @@
+body {
+    background-image : url(https://farm4.staticflickr.com/3769/9234009120_21d69eacee_o_d.jpg);
+    font-family      : Helvetica, sans-serif;
+}
+
+.header {
+    margin           : 20px auto;
+    padding          : 20px;
+    width            : 90%;
+    border-radius    : 3px;
+    background-color : rgba(255, 255, 255, 0.9);
+    text-align       : center;
+}
+
+.candies {
+    margin     : 0 auto;
+    padding    : 0;
+    width      : 100%;
+    list-style : none;
+    text-align : center;
+}
+
+.item {
+    display          : inline-block;
+    margin           : 10px;
+    /*   height: 100px; */
+    padding          : 30px 20px 50px;
+    width            : 20%;
+    height           : 80px;
+    border-radius    : 3px;
+    background-color : rgba(255, 255, 255, 0.9);
+    vertical-align   : top;
+    text-align       : center;
+}
+
+.available {
+    color : black;
+}
+
+.sold-out {
+    color           : red;
+    text-decoration : line-through;
+}
+
+button {
+    display : block;
+    margin  : 20px auto 0;
+}

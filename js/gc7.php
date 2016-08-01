@@ -11,7 +11,6 @@
 
 <body>
 <!--https://github.com/oc-courses/intro-javascript-->
-
 <section class="block_gc7" id="output">
 
   <div id="myAffP"></div>
