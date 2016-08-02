@@ -17,14 +17,13 @@
     <li class="item">Buy movie tickets</li>
   </ul>
 
-<!--  <div id="newItemButton"><button href="#">new item</button></div>-->
-
   <form id="newItemForm">
-    <input type="text" id="itemField" placeholder="Item" />
-    <input type="submit" id="add" value="add" />
+    <input type="text" id="itemField" placeholder="Item"/>
+    <input type="submit" id="add" value="add"/>
   </form>
 
 </div>
+
 <script src=" ../../js/jquery-2.2.4.min.js"></script>
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
 
