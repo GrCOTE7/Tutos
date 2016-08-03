@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../uikit/src/less/uikit.css"/>
-  <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet" href="todo.less">
 </head>
 
 <body>

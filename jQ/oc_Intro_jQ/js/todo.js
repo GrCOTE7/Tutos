@@ -10,7 +10,7 @@ $(function () {
     $newItemForm.on('submit', function (e) {
         e.preventDefault();
         var text = $('input:text').val();
-        $list.append('<li>' + text + '</li>');
+        $list.append('<li class="item">' + grCote7.tools.ucFirst(text) + '</li>');
         $('input:text').val('');
     });
 
@@ -20,5 +20,5 @@ $(function () {
     });
 
     console.log('Ready !');
-        
+
 });
