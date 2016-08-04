@@ -36,16 +36,17 @@ p {
   text-align: center;
 }
 .item {
-  background-color: #fff;
-  color: #f00;
+  background-color: #eee;
+  color: #333;
 }
 input[type='text'] {
   padding: 6px;
   border: 1px solid #000;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 15px;
 }
 input[type='submit'] {
+  font-size: 16px;
   padding: 5px;
   border: none;
   border-radius: 8px;
