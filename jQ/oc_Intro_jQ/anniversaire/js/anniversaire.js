@@ -11,11 +11,7 @@ $(function () {
         'On te souhaite que le meilleur !'
     ];
 
-    for (var i = 0, c = msgs.length; i < c; i++) {
-        // console.log(i);
-    }
-
-
+    
     $list.on('click', function () {
         ajouteBox($('li:eq(0)'), 0);
         $list.unbind();
