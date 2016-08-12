@@ -14,13 +14,36 @@
 <section class="block_gc7" id="output">
 
 
-  <button id="affiche">Faire apparaître les images</button>
-  <button id="cache">Faire disparaître les images</button>
+  <button id="affiche">Faire apparaître les lignes paires</button>
+  <button id="cache">Faire disparaître les lignes paires</button>
   <br/>
-
-  <img src="tp_qcm/bon.png">
-  <img src="tp_qcm/mauvais.png">
-  <img src="tp_qcm/question.png">
+  <table border>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>e</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>h</td>
+      <td>i</td>
+    </tr>
+    <tr>
+      <td>j</td>
+      <td>k</td>
+      <td>l</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>n</td>
+      <td>o</td>
+    </tr>
+  </table>
 
 
   <div id="myAffP"></div>
@@ -32,18 +55,18 @@
 <script>
   $(function () {
 
-    $('img').css('display', 'none');
 
+    $('tr:even').css('background', 'yellow');
+    $('td').css('width', '200px')
+      .css('text-align', 'center');
+    jQuery.fx.speeds['slow'] = 1500;
+    jQuery.fx.speeds['super-slow'] = 3000;
     $('#affiche').click(function () {
-      $('img').last().show(3000, function showNextOne() {
-        $(this).prev('img').show(3000, showNextOne);
-      });
+      $('tr:even').show('slow', 'swing');
     });
-
     $('#cache').click(function () {
-      $('img').first().hide('slow', function hideNextOne() {
-        $(this).next('img').hide('slow', hideNextOne);
-      });
+      $('tr:even').hide('super-slow');
+      console.log('Lignes disparues'); // Executé après effet
     });
 
 
@@ -55,7 +78,8 @@
     //    $('li').wrapInner('<font color="red"><b><i><u>');
     //    $('li:last').prev().remove();
 
-  });
+  })
+  ;
 </script>
 
 
