@@ -59,23 +59,26 @@
     $('tr:even').css('background', 'yellow');
     $('td').css('width', '200px')
       .css('text-align', 'center');
+    jQuery.fx.speeds['slow'] = 1500;
+    jQuery.fx.speeds['super-slow'] = 3000;
     $('#affiche').click(function () {
       $('tr:even').show('slow');
     });
     $('#cache').click(function () {
-      $('tr:even').hide(2000);
+      $('tr:even').hide('super-slow');
     });
 
 
-//   $('h2').each(function () {
-//      var elemH2 = $(this);
-//      elemH2.replaceWith('<h3>' + elemH2.text() + '</h3>');
-//    });
-//    $('li:first').clone().insertBefore('li:last');
-//    $('li').wrapInner('<font color="red"><b><i><u>');
-//    $('li:last').prev().remove();
+    //   $('h2').each(function () {
+    //      var elemH2 = $(this);
+    //      elemH2.replaceWith('<h3>' + elemH2.text() + '</h3>');
+    //    });
+    //    $('li:first').clone().insertBefore('li:last');
+    //    $('li').wrapInner('<font color="red"><b><i><u>');
+    //    $('li:last').prev().remove();
 
-  });
+  })
+  ;
 </script>
 
 
