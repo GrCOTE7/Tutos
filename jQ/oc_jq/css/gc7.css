@@ -12,3 +12,8 @@ body {
   padding: 5px 10px 0;
   text-align: justify;
 }
+#monCarre {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

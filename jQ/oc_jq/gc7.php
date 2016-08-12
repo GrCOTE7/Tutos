@@ -6,10 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../uikit/src/less/uikit.css"/>
   <link rel="stylesheet" href="css/gc7.css">
+
+
 </head>
 
 <body>
 <section class="block_gc7" id="output">
+
+
+  <button id="affiche">Faire apparaître les lignes paires</button>
+  <button id="cache">Faire disparaître les lignes paires</button>
+  <br/>
+  <table border>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>e</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>h</td>
+      <td>i</td>
+    </tr>
+    <tr>
+      <td>j</td>
+      <td>k</td>
+      <td>l</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>n</td>
+      <td>o</td>
+    </tr>
+  </table>
 
 
   <div id="myAffP"></div>
@@ -21,16 +55,25 @@
 <script>
   $(function () {
 
-//    $('img').each(function(index){
-//      this.src = 'images2/i' + (index+1) + '.png';
-//    });
-    $('h2').each(function () {
-      var elemH2 = $(this);
-      elemH2.replaceWith('<h3>' + elemH2.text() + '</h3>');
+
+    $('tr:even').css('background', 'yellow');
+    $('td').css('width', '200px')
+      .css('text-align', 'center');
+    $('#affiche').click(function () {
+      $('tr:even').show('slow');
     });
-    $('li:first').clone().insertBefore('li:last');
-    $('li').wrapInner('<font color="red"><b><i><u>');
-    $('li:last').prev().remove();
+    $('#cache').click(function () {
+      $('tr:even').hide(2000);
+    });
+
+
+//   $('h2').each(function () {
+//      var elemH2 = $(this);
+//      elemH2.replaceWith('<h3>' + elemH2.text() + '</h3>');
+//    });
+//    $('li:first').clone().insertBefore('li:last');
+//    $('li').wrapInner('<font color="red"><b><i><u>');
+//    $('li:last').prev().remove();
 
   });
 </script>
