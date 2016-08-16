@@ -7,20 +7,27 @@
   <link rel="stylesheet" href="../../uikit/src/less/uikit.css"/>
   <link rel="stylesheet" href="css/gc7.css">
 
+  <style>
+
+    
+  </style>
 
 </head>
 
 <body>
 <section class="block_gc7" id="output">
 
-
-  <button id="affiche">Faire apparaître les images</button>
-  <button id="cache">Faire disparaître les images</button>
+  <button id="enchainer">Enchaîner les animations</button>
+  <button id="nePasEnchainer">Ne pas enchaîner les animations</button>
   <br/>
+  <button id="executerEnMemeTemps">Exécuter les animations en même temps</button>
+  <button id="etatInitial">État initial</button>
+  <br/><br/>
+  <img src="tp_qcm/bon.png" style="border: 2px black solid;">
 
-  <img src="tp_qcm/bon.png">
-  <img src="tp_qcm/mauvais.png">
-  <img src="tp_qcm/question.png">
+  <!--  <img src="tp_qcm/bon.png">-->
+  <!--  <img src="tp_qcm/mauvais.png">-->
+  <!--  <img src="tp_qcm/question.png">-->
 
 
   <div id="myAffP"></div>
@@ -32,18 +39,20 @@
 <script>
   $(function () {
 
-    $('img').css('display', 'none');
 
-    $('#affiche').click(function () {
-      $('img').last().show(3000, function showNextOne() {
-        $(this).prev('img').show(3000, showNextOne);
-      });
+    $('#enchainer').click(function () {
+      $('img').animate({'border-width': '100'}, 1500)
+        .animate({'width': '-=100'}, 1500);
     });
-
-    $('#cache').click(function () {
-      $('img').first().hide('slow', function hideNextOne() {
-        $(this).next('img').hide('slow', hideNextOne);
-      });
+    $('#nePasEnchainer').click(function () {
+      $('img').animate({'border-width': '100'}, {queue: false, duration: 1500})
+        .animate({'width': '-=100'}, 1500);
+    });
+    $('#executerEnMemeTemps').click(function () {
+      $('img').animate({'border-width': '100', 'width': '-=100'}, 1500);
+    });
+    $('#etatInitial').click(function () {
+      $('img').css({'border-width': '2px', width: '200'});
     });
 
 
