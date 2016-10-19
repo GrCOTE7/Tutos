@@ -12,9 +12,14 @@
 
 <section class="block_gc7" id="output">
 
-  <div id="myAffP"></div>
   <!--  <div id="monHorloge"></div>-->
+  <?
 
+ include 'poo_emac.php';
+
+  ?>
+  
+  <div id="myAffP"></div>
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-->
 <!--<script src="uikit/src/js/components/sortable.js"></script>-->
