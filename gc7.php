@@ -9,16 +9,16 @@
 </head>
 
 <body>
-
+<!--https://github.com/GrCOTE7/Tutos-->
 <section class="block_gc7" id="output">
 
   <!--  <div id="monHorloge"></div>-->
   <?
 
- include 'poo_emac.php';
+  include 'poo_emac.php';
 
   ?>
-  
+
   <div id="myAffP"></div>
 </section>
 <!--<script src=" js/jquery-2.2.4.min.js"></script>-->
