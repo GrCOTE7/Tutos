@@ -15,7 +15,15 @@
   <!--  <div id="monHorloge"></div>-->
   <?
 
-  include 'poo_emac.php';
+  function vdl ( $v ) {
+
+    echo '<pre>';
+    var_dump ( $v );
+    echo '</pre>';
+  }
+
+//  include 'poo_emac/poo_personnes.php';
+  include 'poo_emac/poo_vehicules.php';
 
   ?>
 

@@ -26,13 +26,22 @@ class Personne {
   public function __construct () {
   }
 
-  public function boire () {
+  private function boire () {
 
-    echo 'La personne boit<br/>';
+    return ' et boit';
   }
 
-  public function manger () {
+  /**
+   * Personne mange
+   *
+   * @param null $etBoire En buvant en même temps
+   */
+  public function manger ( $etBoire = null ) {
 
-    echo 'La personne mange<br/>';
+    echo ( isset( $this->prenom ) ? $this->prenom : 'La personne' ) . ' mange';
+    if ( $etBoire ) {
+      echo $this->boire ();
+    }
+
   }
 }
