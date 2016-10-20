@@ -9,12 +9,14 @@
 include 'Vehicule.php';
 
 // Instanciation de l'objet : appel implicite à la méthode __construct()
-$monVehicule = new Vehicule();
+$maVoiture = new Voiture( 'Renault' );
 
 // Mise à jour de la marque du véhicule
-$monVehicule->marque = 'Peugeot';
+$maVoiture->marque = 'Peugeot';
 
-// Affichage de la marque du véhicule
-echo $monVehicule->marque;
+vdl ( $maVoiture );
 
-vdl($monVehicule);
+// Le véhicule démarre
+$maVoiture->demarrer ();
+$maVoiture->reparer ();
+

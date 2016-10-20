@@ -14,7 +14,12 @@
 
   <!--  <div id="monHorloge"></div>-->
   <?
-
+  /**
+   * vdl var_dump_li
+   * Ma fonction qui présente une variable avec \< pre >
+   *
+   * @param $v Nom de la variable
+   */
   function vdl ( $v ) {
 
     echo '<pre>';
