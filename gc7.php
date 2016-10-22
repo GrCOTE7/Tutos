@@ -27,8 +27,10 @@
     echo '</pre>';
   }
 
-//  include 'poo_emac/poo_personnes.php';
-  include 'poo_emac/poo_vehicules.php';
+  //  include 'poo_emac/personne.php'; // Bese des classes
+  //  include 'poo_emac/vehicule.php'; // Héritage
+  //  include 'poo_emac/kid.php'; // Méthodes magiques __get() & __set(=
+  include 'poo_emac/Manchot.php'; // Méthodes __call() (Permet d'appeler méthode non déclarée
 
   ?>
 

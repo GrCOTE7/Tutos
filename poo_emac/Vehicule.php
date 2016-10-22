@@ -46,7 +46,7 @@ class Voiture extends Vehicule {
 
     if ( $this->_controlerVolumeCarburant () ) {
       echo 'Le véhicule démarre.<br>';
-      echo 'Il s\'agit d\'un véhicule de type: ' . self::class . '<br>';
+      echo sprintf ( 'Il s\'agit d\'un véhicule de type: <b>%s</b><br>', self::class );
 
       return true;
     }
