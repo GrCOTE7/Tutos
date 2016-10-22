@@ -46,9 +46,11 @@
   //  include ( 'poo_emac/Sheep.php' ); // __clone()
   //  include ( 'poo_emac/Singleton.php' ); // ici, __clone() utilisé pour éviter de cloner uin singleton
 
-//  include ( 'poo_emac/serialize.php' ); // Serialisation et unserialisation
-//  include ( 'poo_emac/Strumpf.php' ); // Idem sur objet
-  include ( 'poo_emac/Dormeur.php' ); // __sleep() & __wakeup() : Surcharge des processus natifs serialize() et unserialize()
+  //  include ( 'poo_emac/serialize.php' ); // Serialisation et unserialisation
+  //  include ( 'poo_emac/Strumpf.php' ); // Idem sur objet
+  //  include ( 'poo_emac/Dormeur.php' ); // __sleep() & __wakeup() : Surcharge des processus natifs serialize() et unserialize()
+
+  include ( 'poo_emac/EtreHumain.php' ); //
 
   ?>
 
