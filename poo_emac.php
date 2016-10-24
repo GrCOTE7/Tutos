@@ -52,7 +52,7 @@
 
 //  include ( 'poo_emac/EtreHumain.php' ); // Classes abstraites & finales
 
-  include ( 'poo_emac/exceptions.php' ); // Classes abstraites & finales
+  include ( 'poo_emac/exceptions.php' ); // Exceptions personnalisées
 
   ?>
 
