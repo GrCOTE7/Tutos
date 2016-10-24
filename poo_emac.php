@@ -54,7 +54,11 @@
 
   //  include ( 'poo_emac/exceptions.php' ); // Exceptions personnalisées
 
-  include ( 'poo_emac/exceptions2.php' ); // Exceptions personnalisées
+  //  include ( 'poo_emac/exceptions2.php' ); // Exceptions handler
+
+  //  include ( 'poo_emac/MaCLassAvecLIterator.php' ); // interface Iterator
+
+  include ( 'poo_emac/JsonSerialize.php' ); // interface jsonSerialize
 
   ?>
 
