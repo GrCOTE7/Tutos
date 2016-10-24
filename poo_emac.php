@@ -50,7 +50,9 @@
   //  include ( 'poo_emac/Strumpf.php' ); // Idem sur objet
   //  include ( 'poo_emac/Dormeur.php' ); // __sleep() & __wakeup() : Surcharge des processus natifs serialize() et unserialize()
 
-  include ( 'poo_emac/EtreHumain.php' ); //
+//  include ( 'poo_emac/EtreHumain.php' ); // Classes abstraites & finales
+
+  include ( 'poo_emac/exceptions.php' ); // Classes abstraites & finales
 
   ?>
 
