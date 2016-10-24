@@ -22,8 +22,13 @@
    */
   function vdl ( $v ) {
 
+    $args = func_get_args ();
+
     echo '<pre>';
-    var_dump ( $v );
+    foreach ( $args as $v ) {
+
+      var_dump ( $v );
+    }
     echo '</pre>';
   }
 

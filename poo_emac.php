@@ -13,7 +13,7 @@
 <section class="block_gc7" id="output">
 
   <!--  <div id="monHorloge"></div>-->
-  <?
+  <?php
   /**
    * vdl var_dump_li
    * Ma fonction qui présente une variable avec \< pre >
@@ -44,7 +44,7 @@
 
   //  include ('poo_emac/point.php'); // clone
   //  include ( 'poo_emac/Sheep.php' ); // __clone()
-    include ( 'poo_emac/Singleton.php' ); // ici, __clone() utilisé pour éviter de cloner uin singleton
+  //    include ( 'poo_emac/Singleton.php' ); // ici, __clone() utilisé pour éviter de cloner uin singleton
 
   //  include ( 'poo_emac/serialize.php' ); // Serialisation et unserialisation
   //  include ( 'poo_emac/Strumpf.php' ); // Idem sur objet
@@ -58,7 +58,7 @@
 
   //  include ( 'poo_emac/MaCLassAvecLIterator.php' ); // interface Iterator
 
-  //  include ( 'poo_emac/JsonSerialize.php' ); // interface jsonSerialize
+  //    include ( 'poo_emac/JsonSerialize.php' ); // interface jsonSerialize
 
   ?>
 
