@@ -6,6 +6,11 @@
  * Date: 22/10/16
  * Time: 18:13
  */
+
+/**
+ * Class Singleton
+ * Ceci est un DesignPattern = Patron de conception
+ */
 class Singleton {
 
   /**
@@ -30,7 +35,7 @@ class Singleton {
    */
   public static function getInstance () {
 
-    if ( null === self::$_instance ) {
+    if ( is_null ( self::$_instance ) ) {
       self::$_instance = new Singleton();
     }
 
